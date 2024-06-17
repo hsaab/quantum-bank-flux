@@ -19,8 +19,8 @@ spec:
         app: hsaab-flux-quantum-bank-backend-deployment
     spec:
       containers:
-      - name: quantum-bank-flux
-        image: <+serviceVariables.image>
+      - name: quantum-bank-backend
+        image: hsaab/quantum-bank-backend:140
         imagePullPolicy: "Always"
         resources:
           requests:

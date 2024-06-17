@@ -1,1 +1,1 @@
-image: hsaab/quantum-bank-fluxgit:<+pipeline.sequenceId>
+image: hsaab/quantum-bank-flux:<+pipeline.sequenceId>

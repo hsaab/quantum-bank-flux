@@ -1,0 +1,5 @@
+service:
+  name: quantum-bank-flux-svc-2
+  identifier: quantumbankfluxsvc2
+  orgIdentifier: SE_Sandbox
+  projectIdentifier: devX_super_team

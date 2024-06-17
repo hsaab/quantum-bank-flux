@@ -3,3 +3,24 @@ service:
   identifier: quantumbankfluxsvc2
   orgIdentifier: SE_Sandbox
   projectIdentifier: devX_super_team
+  serviceDefinition:
+    spec:
+      manifests:
+        - manifest:
+            identifier: quantumbankfluxmanifests
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: quantumbankflux
+                  gitFetchType: Branch
+                  paths:
+                    - .harness/kubernetes/hsaab-flux-quantum-bank-backend-deployment.yaml
+                    - .harness/kubernetes/hsaab-flux-quantum-bank-backend-service.yaml
+                  branch: main
+              valuesPaths:
+                - .harness/kubernetes/hsaab-flux-values.yaml
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+    type: Kubernetes

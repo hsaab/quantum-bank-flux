@@ -20,7 +20,8 @@ spec:
     spec:
       containers:
       - name: quantum-bank-backend
-        image: hsaab/quantum-bank-backend:140
+        # hsaab/quantum-bank-backend:140 for old
+        image: hsaab/quantum-bank-backend:168
         imagePullPolicy: "Always"
         resources:
           requests:
